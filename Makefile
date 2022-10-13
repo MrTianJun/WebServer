@@ -7,10 +7,10 @@ main: \
 	${CXX} -o $@ $^ ${CFLAGS}
 
 
-http_conn.o: http_conn.cpp
+http_conn.o: ./src/http_conn.cpp
 	${CXX} -c -o $@ ${CFLAGS} $<
 
-main.o: main.cpp
+main.o: ./src/main.cpp
 	${CXX} -c -o $@ ${CFLAGS} $<
 
 clean:
