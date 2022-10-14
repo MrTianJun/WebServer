@@ -1,7 +1,7 @@
 CXX := g++ 
 CFLAGS = -lpthread
 
-main: \
+webserver: \
 	http_conn.o \
 	main.o
 	${CXX} -o $@ $^ ${CFLAGS}
@@ -15,7 +15,7 @@ main.o: ./src/main.cpp
 
 clean:
 	rm -rf *.o
-	rm -rf main
+	rm -rf webserver
 
 
 
